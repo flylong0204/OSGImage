@@ -1,0 +1,294 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+?<map name="MyMap" type="geocentric" version="2">
+	<image name="d0" driver="gdal">
+		<url>./map/maps/globalearth1.tif</url>
+	</image>
+	<!--image name="d17" driver="gdal">
+		<url>./map/maps/30m.tif</url>
+	</image-->
+	<image name="detial-image" driver="composite">
+    <!--13L-105-115-30-35-->
+    <image name="d16" driver="gdal">
+			<url>./map/maps/300m.tif</url>
+	  </image>
+    <image name="13-1" driver="gdal">
+    	<url>./map/maps/1.tif</url>
+    </image>
+    <image name="13-2" driver="gdal">
+    	<url>./map/maps/2.tif</url>
+    </image>
+    <image name="13-3" driver="gdal">
+    	<url>./map/maps/3.tif</url>
+    </image>
+    <image name="13-4" driver="gdal">
+    	<url>./map/maps/4.tif</url>
+    </image>
+    
+    <!--西安高清17L-34-35-1085-1095-->
+    <!--image name="17-0" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/0.tif</url>
+    </image>
+    <image name="17-1" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/1.tif</url>
+    </image>
+    <image name="17-2" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/2.tif</url>
+    </image>
+    <image name="17-3" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/3.tif</url>
+    </image>
+    <image name="17-4" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/4.tif</url>
+    </image>
+    <image name="17-5" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/5.tif</url>
+    </image>
+    <image name="17-6" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/6.tif</url>
+    </image>
+    <image name="17-7" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/7.tif</url>
+    </image>
+    <image name="17-8" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/8.tif</url>
+    </image>
+    <image name="17-9" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/9.tif</url>
+    </image>
+    <image name="17-10" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/10.tif</url>
+    </image>
+    <image name="17-11" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/11.tif</url>
+    </image-->  
+    
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_01-01.tif</url>
+    </image>  
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_01-02.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_01-03.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_02-01.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_02-02.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_02-03.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_03-01.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_03-02.tif</url>
+    </image> 
+    <image name="19-xian" driver="gdal">
+    	<url>E:/19L-xian/xian_19_03-03.tif</url>
+    </image> 
+    
+   <!--西安高清17L-34-35-1085-1095--> 
+   </image>
+	  <image name="111" driver="gdal">
+    	<url>./map/maps/recfy.tif</url>
+    </image>
+   <image name="d14" driver="gdal" transparent_color="0 0 0 255">
+	  	<url>./map/maps/lang2_mosaic_group1.tif</url>
+	  	<color_filters>
+      	<chroma_key b="0" distance="0.3" g="0" r="0" />
+      	 <gamma rgb="0.60000000" />
+    	</color_filters>
+	 </image>
+	 
+	 
+	 <!--image name="112" driver="gdal">
+    	<url>./map/maps/haochuangzhou.tif</url>
+    </image-->
+    
+	  
+	  <!--image driver="gdal" enabled="true" is2d3d="map_3d" name="111" opacity="1" url="C:/Users/Administrator/Desktop/image/lang2_mosaic_group2.tif" visible="true">
+    	<cache_policy usage="no_cache" />
+    	<color_filters>
+      	<chroma_key b="0" distance="0.30000001" g="0" r="0" />
+    	</color_filters>
+   	</image-->
+	  
+	<!--image name="d20" driver="gdal" opacity="1">
+		<url>./map/maps/mizhi_2_transparent_mosaic_group1.tif</url>
+				<color_filters>
+      	<chroma_key b="0" distance="0.30000001" g="0" r="0" />
+    	</color_filters>
+	</image-->
+   <!--image driver="gdal" transparent_color="0 0 0 255" enabled="true" is2d3d="map_3d" name="fdgfg" opacity="1" url="F:/1127/OSGImage/map/maps/mizhi_2_transparent_mosaic_group1.tif" visible="true">
+    <cache_policy usage="no_cache" />
+    <color_filters>
+      	<chroma_key b="0" distance="0.3" g="0" r="0" />
+    	</color_filters>
+  </image-->
+	<!--image name="d2" driver="gdal">
+		<url>./map/maps/15m2_A8.tif</url>
+	</image>
+	<image name="d3" driver="gdal">
+		<url>./map/maps/15m2_A9.tif</url>
+	</image>
+	<image name="d4" driver="gdal">
+		<url>./map/maps/15m3_A4.tif</url>
+	</image>
+	<image name="d5" driver="gdal">
+		<url>./map/maps/15m3_A5.tif</url>
+	</image>
+	<image name="d6" driver="gdal">
+		<url>./map/maps/15m3_A6.tif</url>
+	</image>
+	<image name="d7" driver="gdal">
+		<url>./map/maps/15m3_A7.tif</url>
+	</image>
+	<image name="d8" driver="gdal">
+		<url>./map/maps/15m_B_08.tif</url>
+	</image>
+	<image name="d9" driver="gdal">
+		<url>./map/maps/15m_B_09.tif</url>
+	</image>
+	<image name="d10" driver="gdal">
+		<url>./map/maps/15m_C_08.tif</url>
+	</image>
+	<image name="d11" driver="gdal">
+		<url>./map/maps/15m_C_09.tif</url>
+	</image>
+	<image name="d12" driver="gdal">
+		<url>./map/maps/15m_C_09.tif</url>
+	</image>
+	<image name="d13" driver="gdal">
+		<url>./map/maps/luoniu3.tif</url>
+	</image>
+	<image name="d14" driver="gdal">
+		<url>./map/maps/lang2_mosaic_group1.tif</url>
+	</image>
+	<image name="d15" driver="gdal">
+		<url>./map/maps/xian.tif</url>
+	</image>
+	<image name="d20" driver="gdal">
+		<url>./map/maps/mizhi_2_transparent_mosaic_group1.tif</url>
+	</image>
+	
+	<!--17L-34-35-1085-1095-->
+    <!--image name="17-0" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/0.tif</url>
+    </image>
+    <image name="17-1" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/1.tif</url>
+    </image>
+    <image name="17-2" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/2.tif</url>
+    </image>
+    <image name="17-3" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/3.tif</url>
+    </image>
+    <image name="17-4" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/4.tif</url>
+    </image>
+    <image name="17-5" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/5.tif</url>
+    </image>
+    <image name="17-6" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/6.tif</url>
+    </image>
+    <image name="17-7" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/7.tif</url>
+    </image>
+    <image name="17-8" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/8.tif</url>
+    </image>
+    <image name="17-9" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/9.tif</url>
+    </image>
+    <image name="17-10" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/10.tif</url>
+    </image>
+    <image name="17-11" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/11.tif</url>
+    </image-->
+	
+	
+	<!--elevation name="dem1" driver="gdal">
+		<url>./map/dem/srtm_58_06.tif</url>
+	</elevation>
+	<elevation name="dem2" driver="gdal">
+		<url>./map/dem/srtm_58_07.tif</url>
+	</elevation>
+	<elevation name="dem3" driver="gdal">
+		<url>./map/dem/srtm_58_08.tif</url>
+	</elevation>
+	<elevation name="dem4" driver="gdal">
+		<url>./map/dem/srtm_58_09.tif</url>
+	</elevation>
+	<elevation name="dem5" driver="gdal">
+		<url>./map/dem/srtm_58_10.tif</url>
+	</elevation>
+	<elevation name="dem6" driver="gdal">
+		<url>./map/dem/srtm_59_06.tif</url>
+	</elevation>
+	<elevation name="dem7" driver="gdal">
+		<url>./map/dem/srtm_59_07.tif</url>
+	</elevation>
+	<elevation name="dem8" driver="gdal">
+		<url>./map/dem/srtm_59_08.tif</url>
+	</elevation>
+	<elevation name="dem9" driver="gdal">
+		<url>./map/dem/srtm_59_09.tif</url>
+	</elevation>
+	<elevation name="dem10" driver="gdal">
+		<url>./map/dem/srtm_59_10.tif</url>
+	</elevation>
+	<elevation name="dem11" driver="gdal">
+		<url>./map/dem/srtm_60_06.tif</url>
+	</elevation>
+	<elevation name="dem12" driver="gdal">
+		<url>./map/dem/srtm_60_07.tif</url>
+	</elevation>
+	<elevation name="dem13" driver="gdal">
+		<url>./map/dem/srtm_60_08.tif</url>
+	</elevation>
+	<elevation name="dem14" driver="gdal">
+		<url>./map/dem/srtm_60_09.tif</url>
+	</elevation>
+	<elevation name="dem15" driver="gdal">
+		<url>./map/dem/srtm_60_10.tif</url>
+	</elevation>
+	<elevation name="dem16" driver="gdal">
+		<url>./map/dem/srtm_61_06.tif</url>
+	</elevation>
+	<elevation name="dem17" driver="gdal">
+		<url>./map/dem/srtm_61_07.tif</url>
+	</elevation>
+	<elevation name="dem18" driver="gdal">
+		<url>./map/dem/srtm_61_08.tif</url>
+	</elevation>
+	<elevation name="dem19" driver="gdal">
+		<url>./map/dem/srtm_61_09.tif</url>
+	</elevation>
+	<elevation name="dem20" driver="gdal">
+		<url>./map/dem/srtm_61_10.tif</url>
+	</elevation>
+	<elevation name="dem21" driver="gdal">
+		<url>./map/dem/srtm_62_06.tif</url>
+	</elevation>
+	<elevation name="dem22" driver="gdal">
+		<url>./map/dem/srtm_62_07.tif</url>
+	</elevation>
+	<elevation name="dem23" driver="gdal">
+		<url>./map/dem/srtm_62_08.tif</url>
+	</elevation>
+	<elevation name="dem24" driver="gdal">
+		<url>./map/dem/srtm_62_10.tif</url>
+	</elevation-->
+	<options>
+		<cache type = "filesystem" cache_only = "false">
+			<path>./map/cache</path>
+			<format>jps</format>
+		</cache>
+	</options>		
+</map>

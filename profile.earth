@@ -1,0 +1,60 @@
+<!--
+osgEarth Sample
+-->
+
+<map name="Wordwide Line Vectors" type="geocentric">
+
+    <options>
+        <lighting>false</lighting>
+        <terrain min_lod="16"/>
+    </options>
+
+    <image name="world" driver="gdal">
+        <url>../data/world.tif</url>
+        <cache_policy usage="no_cache"/>
+    </image>
+
+    <!--image name="world" driver="gdal">
+        <url>E:/mapdata/xll/mizhi_2_transparent_mosaic_group1.tif</url>
+        <cache_policy usage="no_cache"/>
+    </image-->
+
+<!--model name="world_boundaries" driver="feature_geom">
+            
+        <features name="world" driver="ogr" >
+            <url>E:/mapdata/shpFile/sdfgh.shp</url>
+            <build_spatial_index>true</build_spatial_index>
+            <convert type="line"/>
+        </features>
+        
+        <layout tile_size="500000" crop_features="true">
+            <level max_range="1e10"/>
+        </layout>
+                
+        <styles>
+            <style type="text/css">
+                world {
+                   stroke:                       #ffff00;
+                   stroke-width:                 2px;
+                   stroke-tessellation-size:     100km;
+                   render-depth-offset-min-bias: 1000;
+                   render-lighting:false;
+                   stroke-opacity:1;
+                   altitude-clamping:terrain;
+                   altitude-technique:gpu;
+                }            
+            </style>
+        </styles>
+        
+    </model-->
+    
+    <options>
+    	<overlay_blending>false</overlay_blending>
+	  <cache_policy usage="cache_only"/>
+		<cache type = "filesystem" cache_only = "false">
+			<path>./FileCache</path>
+			<!--format>jps</format-->
+		</cache>
+	</options>
+
+</map>

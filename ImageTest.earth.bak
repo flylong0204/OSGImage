@@ -1,0 +1,112 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<map name="MyMap" type="geocentric" version="2">
+
+	<!--È«ÇòÓ°Ïñ-->
+	<image name="d0" driver="gdal">
+		<url>./map/maps/globalearth1.tif</url>
+	</image>
+
+	<image name="detial-image" driver="composite">
+    <image name="d16" driver="gdal">
+			<url>./map/maps/300m.tif</url>
+	  </image>
+    <image name="13-1" driver="gdal">
+    	<url>./map/maps/1.tif</url>
+    </image>
+    <image name="13-2" driver="gdal">
+    	<url>./map/maps/2.tif</url>
+    </image>
+    <image name="13-3" driver="gdal">
+    	<url>./map/maps/3.tif</url>
+    </image>
+    <image name="13-4" driver="gdal">
+    	<url>./map/maps/4.tif</url>
+    </image>
+
+    <image name="17-0" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/0.tif</url>
+    </image>
+    <image name="17-1" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/1.tif</url>
+    </image>
+    <image name="17-2" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/2.tif</url>
+    </image>
+    <image name="17-3" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/3.tif</url>
+    </image>
+    <image name="17-4" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/4.tif</url>
+    </image>
+    <image name="17-5" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/5.tif</url>
+    </image>
+    <image name="17-6" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/6.tif</url>
+    </image>
+    <image name="17-7" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/7.tif</url>
+    </image>
+    <image name="17-8" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/8.tif</url>
+    </image>
+    <image name="17-9" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/9.tif</url>
+    </image>
+    <image name="17-10" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/10.tif</url>
+    </image>
+    <image name="17-11" driver="gdal">
+    	<url>E:/17L-34-35-1085-1095/11.tif</url>
+    </image>
+   </image>
+    
+   
+
+    <image name="105_9-34_9-19_416419_84506_19" driver="gdal">
+    	<url>E:/mapdata/105_9-34_9-19L/105_9-34_9-19_416419_84506_19.tif</url>
+    </image>   
+    <image name="lang2_mosaic_group1" driver="gdal" transparent_color="0 0 0 255"  opacity="1">
+    	<url>./map/maps/lang2_mosaic_group1.tif</url>
+    </image>
+    
+    <image name="mizhi_2_transparent_mosaic_group1" driver="gdal">
+    	<url>./map/maps/mizhi_2_transparent_mosaic_group1.tif</url>
+    </image>
+    <image name="mizhi_2_transparent_mosaic_group1_1_3" driver="gdal">
+    	<url>E:/mapdata/mizhi_tiles/tiles/mizhi_2_transparent_mosaic_group1_1_3.tif</url>
+    </image>
+    
+    <!--image name="lang2_mosaic_group1" driver="gdal" transparent_color="0 0 0 255" name="asd" opacity="1">
+    	<url>./map/maps/lang2_mosaic_group1.tif</url>
+    </image>
+    -->
+   <!--image name="d14" driver="gdal" transparent_color="0 0 0 255">
+	  	<url>./map/maps/lang2_mosaic_group1.tif</url>
+	  	<color_filters>
+      	<chroma_key b="0" distance="0.3" g="0" r="0" />
+      	 <gamma rgb="0.60000000" />
+    	</color_filters>
+	 </image
+
+  	<image name="mizhi_2_transparent_mosaic_group1" driver="gdal" transparent_color="0 0 0 255" name="asd" opacity="1">
+    	<url>./map/maps/mizhi_2_transparent_mosaic_group1.tif</url>
+    </image>
+    
+
+  	<image driver="gdal"  transparent_color="0 0 0 255" name="mizhi_2_transparent_mosaic_group1_1_3" opacity="1" >
+   		 <url>E:/mapdata/mizhi_tiles/tiles/mizhi_2_transparent_mosaic_group1_1_3.tif</url>
+  	</image>
+  	 
+-->
+
+	<options>
+		<cache type = "filesystem" cache_only = "false">
+			<path>./FileCache</path>
+			<format>jps</format>
+		</cache>
+			<!--terrain>
+            <color>#ff0000</color>
+        </terrain-->
+	</options>
+</map>
